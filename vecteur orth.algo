@@ -1,0 +1,67 @@
+PROCEDURE multiplication (n:integer,var v1,V2: ARRAY-of INTEGER)
+VAR
+    i,j,ps:integer;
+BEGIN
+    for i from 0 to n step 1 do 
+     for j from 0 to n step 1 do
+     ps=v1*v2;
+     end for
+    end for 
+END
+
+
+
+
+ALGORITHM  Dot product
+VAR
+    v1, v2,: Array-of Integer[50];
+    n:INTEGER;
+    ps:string;
+    vect1,vect2:integer;
+BEGIN
+    write("nbr pair de vecteur ");
+    read(n);
+   
+    REPEAT
+      multiplication(vect1,vect2);
+    UNTIL (ps==null) ;
+        
+END
+
+
+
+//algorithm with function//
+
+
+FUNCTION vecteur-orth() :Integer;
+VAR
+    i,j,ps:integer;
+    v1,v2: ARRAY_OF type[50];
+BEGIN
+    for i from 0 to n step 1 do 
+     for j from 0 to n step 1 do
+     ps=v1*v2;
+     end for
+    end for
+
+    RETURN ps ;
+END
+
+ 
+
+
+ALGORITHM  Dot product-with function
+VAR
+    v1, v2,: Array-of Integer[50];
+    n:INTEGER;
+    ps:string;
+    vect1,vect2:integer;
+BEGIN
+    write("nbr pair de vecteur ");
+    read(n);
+    REPEAT
+      ps= vecteur-orth();
+    UNTIL (ps==null) 
+END
+
+
